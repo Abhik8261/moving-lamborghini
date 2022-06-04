@@ -30,7 +30,7 @@ body{
      position: absolute;
    
     top: 70vh;
-      animation: carmove linear 13s infinite ;  
+      animation: carmove linear 3s infinite ;  
 }
  .cars
 {
@@ -42,7 +42,7 @@ body{
     position: absolute;
     left:444px;
     bottom: 15vh;
-    animation: shake linear 3s infinite;
+    animation: shake linear .3s infinite;
 }
 .wheel{
     

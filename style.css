@@ -7,19 +7,24 @@ body{
     overflow: hidden;
 }
  .sky{
-    height:100vh ;
+    height:90vh ;
+    width: 800vw;
     background-image: url(./background.jpg);
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
+   background-repeat: repeat-x;
+   position: absolute;
+   
+     animation: skymove linear 13s infinite; 
 
 } 
   .trees{
     height: 100vh;
-    width: 100%;
+    width: 800vw;
     background-image: url(./trees.png);
-    position: absolute;
+   background-repeat: repeat-x;
+      position: absolute;  
+
     top: -164px;
+    animation: treemove linear 13s infinite;
 } 
 
  .track{
@@ -52,14 +57,14 @@ body{
     position: relative;
     top: 40px;
     left: 42px;
-    animation:wheelRotation linear .6s infinite ;
+    animation:wheelRotation linear .1s infinite ;
 }
 .wheel2 img{
     width: 75px;
     position: relative;
     top: -37px;
     left: 234px;
-    animation:wheelRotation linear .6s infinite ;
+    animation:wheelRotation linear .1s infinite ;
 } 
 @keyframes wheelRotation {
     100%{
@@ -73,12 +78,22 @@ body{
 } 
 @keyframes shake{
     0%{
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
     50%{
-        transform: translateY(5px);
+        transform: translateY(4px);
     }
     100%{
-        transform: translateY(-5px);
+        transform: translateY(-2px);
+    }
+}
+@keyframes treemove{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+@keyframes skymove{
+    100%{
+        transform: translateX(-500vw);
     }
 }
